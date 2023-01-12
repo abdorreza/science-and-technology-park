@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <MySQL Ref="2" type="Stimulsoft.Report.Dictionary.StiMySqlDatabase" isKey="true">
+        <Alias>MySQL</Alias>
+        <ConnectionStringEncrypted>41z168Za+9lFR82lTUxlc43Ew0hNTKPN4XiE3GR04T/RarmJ3UrDmeNEnA==</ConnectionStringEncrypted>
+        <Name>MySQL</Name>
+      </MySQL>
+    </Databases>
+    <DataSources isList="true" count="5">
+      <centers Ref="3" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
+        <Alias>centers</Alias>
+        <Columns isList="true" count="4">
+          <value>code,System.Int32</value>
+          <value>state_code,System.Int32</value>
+          <value>name,System.String</value>
+          <value>logo,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>centers</Name>
+        <NameInSource>MySQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from centers</SqlCommand>
+      </centers>
+      <corps Ref="4" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
+        <Alias>corps</Alias>
+        <Columns isList="true" count="252">
+          <value>code,System.Int32</value>
+          <value>code_state,System.Int32</value>
+          <value>code_center,System.Int32</value>
+          <value>code_user,System.Int32</value>
+          <value>name,System.String</value>
+          <value>shomare_sabt,System.String</value>
+          <value>date_sabt,System.String</value>
+          <value>type,System.String</value>
+          <value>shenase_melli,System.String</value>
+          <value>code_eghtesadi,System.String</value>
+          <value>tel,System.String</value>
+          <value>fax,System.String</value>
+          <value>email,System.String</value>
+          <value>website,System.String</value>
+          <value>address,System.String</value>
+          <value>semat1,System.String</value>
+          <value>semat2,System.String</value>
+          <value>semat3,System.String</value>
+          <value>semat4,System.String</value>
+          <value>semat5,System.String</value>
+          <value>semat6,System.String</value>
+          <value>semat7,System.String</value>
+          <value>semat8,System.String</value>
+          <value>semat9,System.String</value>
+          <value>semat10,System.String</value>
+          <value>semat11,System.String</value>
+          <value>semat12,System.String</value>
+          <value>sex1,System.String</value>
+          <value>sex2,System.String</value>
+          <value>sex3,System.String</value>
+          <value>sex4,System.String</value>
+          <value>sex5,System.String</value>
+          <value>sex6,System.String</value>
+          <value>sex7,System.String</value>
+          <value>sex8,System.String</value>
+          <value>sex9,System.String</value>
+          <value>sex10,System.String</value>
+          <value>sex11,System.String</value>
+          <value>sex12,System.String</value>
+          <value>name1,System.String</value>
+          <value>name2,System.String</value>
+          <value>name3,System.String</value>
+          <value>name4,System.String</value>
+          <value>name5,System.String</value>
+          <value>name6,System.String</value>
+          <value>name7,System.String</value>
+          <value>name8,System.String</value>
+          <value>name9,System.String</value>
+          <value>name10,System.String</value>
+          <value>name11,System.String</value>
+          <value>name12,System.String</value>
+          <value>father1,System.String</value>
+          <value>father2,System.String</value>
+          <value>father3,System.String</value>
+          <value>father4,System.String</value>
+          <value>father5,System.String</value>
+          <value>father6,System.String</value>
+          <value>father7,System.String</value>
+          <value>father8,System.String</value>
+          <value>father9,System.String</value>
+          <value>father10,System.String</value>
+          <value>father11,System.String</value>
+          <value>father12,System.String</value>
+          <value>bdate1,System.String</value>
+          <value>bdate2,System.String</value>
+          <value>bdate3,System.String</value>
+          <value>bdate4,System.String</value>
+          <value>bdate5,System.String</value>
+          <value>bdate6,System.String</value>
+          <value>bdate7,System.String</value>
+          <value>bdate8,System.String</value>
+          <value>bdate9,System.String</value>
+          <value>bdate10,System.String</value>
+          <value>bdate11,System.String</value>
+          <value>bdate12,System.String</value>
+          <value>code_melli1,System.String</value>
+          <value>code_melli2,System.String</value>
+          <value>code_melli3,System.String</value>
+          <value>code_melli4,System.String</value>
+          <value>code_melli5,System.String</value>
+          <value>code_melli6,System.String</value>
+          <value>code_melli7,System.String</value>
+          <value>code_melli8,System.String</value>
+          <value>code_melli9,System.String</value>
+          <value>code_melli10,System.String</value>
+          <value>code_melli11,System.String</value>
+          <value>code_melli12,System.String</value>
+          <value>madrak1,System.String</value>
+          <value>madrak2,System.String</value>
+          <value>madrak3,System.String</value>
+          <value>madrak4,System.String</value>
+          <value>madrak5,System.String</value>
+          <value>madrak6,System.String</value>
+          <value>madrak7,System.String</value>
+          <value>madrak8,System.String</value>
+          <value>madrak9,System.String</value>
+          <value>madrak10,System.String</value>
+          <value>madrak11,System.String</value>
+          <value>madrak12,System.String</value>
+          <value>gerayesh1,System.String</value>
+          <value>gerayesh2,System.String</value>
+          <value>gerayesh3,System.String</value>
+          <value>gerayesh4,System.String</value>
+          <value>gerayesh5,System.String</value>
+          <value>gerayesh6,System.String</value>
+          <value>gerayesh7,System.String</value>
+          <value>gerayesh8,System.String</value>
+          <value>gerayesh9,System.String</value>
+          <value>gerayesh10,System.String</value>
+          <value>gerayesh11,System.String</value>
+          <value>gerayesh12,System.String</value>
+          <value>takhasos1,System.String</value>
+          <value>takhasos2,System.String</value>
+          <value>takhasos3,System.String</value>
+          <value>takhasos4,System.String</value>
+          <value>takhasos5,System.String</value>
+          <value>takhasos6,System.String</value>
+          <value>takhasos7,System.String</value>
+          <value>takhasos8,System.String</value>
+          <value>takhasos9,System.String</value>
+          <value>takhasos10,System.String</value>
+          <value>takhasos11,System.String</value>
+          <value>takhasos12,System.String</value>
+          <value>nezam1,System.String</value>
+          <value>nezam2,System.String</value>
+          <value>nezam3,System.String</value>
+          <value>nezam4,System.String</value>
+          <value>nezam5,System.String</value>
+          <value>nezam6,System.String</value>
+          <value>nezam7,System.String</value>
+          <value>nezam8,System.String</value>
+          <value>nezam9,System.String</value>
+          <value>nezam10,System.String</value>
+          <value>nezam11,System.String</value>
+          <value>nezam12,System.String</value>
+          <value>note1,System.String</value>
+          <value>note2,System.String</value>
+          <value>note3,System.String</value>
+          <value>note4,System.String</value>
+          <value>note5,System.String</value>
+          <value>note6,System.String</value>
+          <value>note7,System.String</value>
+          <value>note8,System.String</value>
+          <value>note9,System.String</value>
+          <value>note10,System.String</value>
+          <value>note11,System.String</value>
+          <value>note12,System.String</value>
+          <value>hamkari1,System.String</value>
+          <value>hamkari2,System.String</value>
+          <value>hamkari3,System.String</value>
+          <value>hamkari4,System.String</value>
+          <value>hamkari5,System.String</value>
+          <value>hamkari6,System.String</value>
+          <value>hamkari7,System.String</value>
+          <value>hamkari8,System.String</value>
+          <value>hamkari9,System.String</value>
+          <value>hamkari10,System.String</value>
+          <value>hamkari11,System.String</value>
+          <value>hamkari12,System.String</value>
+          <value>logo,System.String</value>
+          <value>hoze,System.Int32</value>
+          <value>zamine,System.Int32</value>
+          <value>idea,System.String</value>
+          <value>product1,System.String</value>
+          <value>product2,System.String</value>
+          <value>product3,System.String</value>
+          <value>product4,System.String</value>
+          <value>product5,System.String</value>
+          <value>product6,System.String</value>
+          <value>product_img1,System.String</value>
+          <value>product_img2,System.String</value>
+          <value>product_img3,System.String</value>
+          <value>product_img4,System.String</value>
+          <value>product_img5,System.String</value>
+          <value>product_img6,System.String</value>
+          <value>faaliat1,System.String</value>
+          <value>faaliat2,System.String</value>
+          <value>faaliat3,System.String</value>
+          <value>faaliat4,System.String</value>
+          <value>vaziat1,System.String</value>
+          <value>vaziat2,System.String</value>
+          <value>vaziat3,System.String</value>
+          <value>vaziat4,System.String</value>
+          <value>zaman1,System.String</value>
+          <value>zaman2,System.String</value>
+          <value>zaman3,System.String</value>
+          <value>zaman4,System.String</value>
+          <value>et1,System.String</value>
+          <value>et2,System.String</value>
+          <value>et3,System.String</value>
+          <value>et4,System.String</value>
+          <value>karfarma1,System.String</value>
+          <value>karfarma2,System.String</value>
+          <value>karfarma3,System.String</value>
+          <value>karfarma4,System.String</value>
+          <value>dastavard1,System.String</value>
+          <value>dastavard2,System.String</value>
+          <value>dastavard3,System.String</value>
+          <value>dastavard4,System.String</value>
+          <value>mojri1,System.String</value>
+          <value>mojri2,System.String</value>
+          <value>mojri3,System.String</value>
+          <value>mojri4,System.String</value>
+          <value>note_faaliat1,System.String</value>
+          <value>note_faaliat2,System.String</value>
+          <value>note_faaliat3,System.String</value>
+          <value>note_faaliat4,System.String</value>
+          <value>nasher1,System.String</value>
+          <value>nasher2,System.String</value>
+          <value>nasher3,System.String</value>
+          <value>nasher4,System.String</value>
+          <value>onvan1,System.String</value>
+          <value>onvan2,System.String</value>
+          <value>onvan3,System.String</value>
+          <value>onvan4,System.String</value>
+          <value>writer1,System.String</value>
+          <value>writer2,System.String</value>
+          <value>writer3,System.String</value>
+          <value>writer4,System.String</value>
+          <value>date1,System.String</value>
+          <value>date2,System.String</value>
+          <value>date3,System.String</value>
+          <value>date4,System.String</value>
+          <value>note_enteshar1,System.String</value>
+          <value>note_enteshar2,System.String</value>
+          <value>note_enteshar3,System.String</value>
+          <value>note_enteshar4,System.String</value>
+          <value>date_esteghrar,System.String</value>
+          <value>date_end,System.String</value>
+          <value>esteghrar1,System.String</value>
+          <value>esteghrar2,System.String</value>
+          <value>esteghrar3,System.String</value>
+          <value>esteghrar4,System.String</value>
+          <value>room1,System.String</value>
+          <value>room2,System.String</value>
+          <value>room3,System.String</value>
+          <value>room4,System.String</value>
+          <value>nazer,System.Int32</value>
+          <value>etebar,System.String</value>
+          <value>date_etebar,System.String</value>
+          <value>note_etebar,System.String</value>
+          <value>etebar1,System.String</value>
+          <value>date_etebar1,System.String</value>
+          <value>note_etebar1,System.String</value>
+          <value>etebar2,System.String</value>
+          <value>date_etebar2,System.String</value>
+          <value>note_etebar2,System.String</value>
+          <value>etebar3,System.String</value>
+          <value>date_etebar3,System.String</value>
+          <value>note_etebar3,System.String</value>
+          <value>bedehi,System.Int32</value>
+          <value>note_bedehi,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>corps</Name>
+        <NameInSource>MySQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from corps</SqlCommand>
+      </corps>
+      <hoze Ref="5" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
+        <Alias>hoze</Alias>
+        <Columns isList="true" count="2">
+          <value>code,System.Int32</value>
+          <value>name,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>hoze</Name>
+        <NameInSource>MySQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from hoze</SqlCommand>
+      </hoze>
+      <states Ref="6" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
+        <Alias>states</Alias>
+        <Columns isList="true" count="3">
+          <value>code,System.Int32</value>
+          <value>name,System.String</value>
+          <value>logo,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>states</Name>
+        <NameInSource>MySQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from states</SqlCommand>
+      </states>
+      <zamine Ref="7" type="Stimulsoft.Report.Dictionary.StiMySqlSource" isKey="true">
+        <Alias>zamine</Alias>
+        <Columns isList="true" count="3">
+          <value>code,System.Int32</value>
+          <value>code_hoze,System.Int32</value>
+          <value>name,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>zamine</Name>
+        <NameInSource>MySQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from zamine</SqlCommand>
+      </zamine>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>1bb6663fc61543edaf694bbd6c19a6da</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="8" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <PageHeaderBand1 Ref="9" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,2.2</ClientRectangle>
+          <Components isList="true" count="15">
+            <Text2 Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;None;False;4;Black</Border>
+              <Brush>LightGray</Brush>
+              <ClientRectangle>18,1,1,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;None;False;4;Black</Border>
+              <Brush>LightGray</Brush>
+              <ClientRectangle>12.8,1,5.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10,Bold</Font>
+              <Guid>625a927c606041a08e2eb1f6694ca029</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <Text>عنوان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="12" type="Text" isKey="true">
+              <Border>All;Black;1;None;False;4;Black</Border>
+              <Brush>LightGray</Brush>
+              <ClientRectangle>9,1,3.8,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10,Bold</Font>
+              <Guid>fb37381192da476e95065626d2caffbf</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <Text>نوع شرکت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="13" type="Text" isKey="true">
+              <Border>All;Black;1;None;False;4;Black</Border>
+              <Brush>LightGray</Brush>
+              <ClientRectangle>4.4,1,4.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10,Bold</Font>
+              <Guid>4db9da41dece4640a28c31c931d37e8d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <Text>مدیر عامل</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="14" type="Text" isKey="true">
+              <Border>All;Black;1;None;False;4;Black</Border>
+              <Brush>LightGray</Brush>
+              <ClientRectangle>0,1,4.4,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10,Bold</Font>
+              <Guid>f9dcdcc2e1fc4426b8965b3bb930f6e7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <Text>تلفن</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <StartPointPrimitive1 Ref="15" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,1,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>77ab248c65d24cd3b708a27d83ae7029</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="16" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>19,2.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>77ab248c65d24cd3b708a27d83ae7029</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <StartPointPrimitive2 Ref="17" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>18,1,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>d946bb7c9870412ea25920cf33cc9558</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <EndPointPrimitive2 Ref="18" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>18,2.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>d946bb7c9870412ea25920cf33cc9558</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <StartPointPrimitive3 Ref="19" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>12.8,1,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>ddbaf4be26a4488f86ac9e5ab72de9c4</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <EndPointPrimitive3 Ref="20" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>12.8,2.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>ddbaf4be26a4488f86ac9e5ab72de9c4</ReferenceToGuid>
+            </EndPointPrimitive3>
+            <StartPointPrimitive4 Ref="21" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>9,1,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>6ece53ab04a44196a43424547014f18b</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <EndPointPrimitive4 Ref="22" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>9,2.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>6ece53ab04a44196a43424547014f18b</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <StartPointPrimitive5 Ref="23" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>4.4,1,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>608f505080944dfdaf687705fbfee982</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <EndPointPrimitive5 Ref="24" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>4.4,2.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="8" />
+              <Parent isRef="9" />
+              <ReferenceToGuid>608f505080944dfdaf687705fbfee982</ReferenceToGuid>
+            </EndPointPrimitive5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+        </PageHeaderBand1>
+        <DataBand1 Ref="25" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text1 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>4,4,4,4</Margins>
+              <Name>Text1</Name>
+              <Page isRef="8" />
+              <Parent isRef="25" />
+              <Text>{corps.name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text7 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,0,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <Guid>532ad0e764ca4cd38623b9f54eec6be6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>4,4,4,4</Margins>
+              <Name>Text7</Name>
+              <Page isRef="8" />
+              <Parent isRef="25" />
+              <Text>{Persian(Line)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <Guid>d94824e261e448df94679776702a89b6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>4,4,4,4</Margins>
+              <Name>Text8</Name>
+              <Page isRef="8" />
+              <Parent isRef="25" />
+              <Text>{corps.type}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,0,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <Guid>a12c91526f41498986679734e5f30642</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>4,4,4,4</Margins>
+              <Name>Text9</Name>
+              <Page isRef="8" />
+              <Parent isRef="25" />
+              <Text>{corps.name1}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <Guid>63b2c65f1fea4f4ab5063d92b0f7d630</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>4,4,4,4</Margins>
+              <Name>Text10</Name>
+              <Page isRef="8" />
+              <Parent isRef="25" />
+              <Text>{Persian(corps.tel)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>corps</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <RectanglePrimitive1 Ref="31" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0,1.4,19,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <Guid>77ab248c65d24cd3b708a27d83ae7029</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+        </RectanglePrimitive1>
+        <VerticalLinePrimitive1 Ref="32" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>18,1.4,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="33" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>d946bb7c9870412ea25920cf33cc9558</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <StartCap Ref="34" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <VerticalLinePrimitive2 Ref="35" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>12.8,1.4,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="36" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>ddbaf4be26a4488f86ac9e5ab72de9c4</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <StartCap Ref="37" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+        <VerticalLinePrimitive3 Ref="38" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>9,1.4,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="39" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>6ece53ab04a44196a43424547014f18b</Guid>
+          <Name>VerticalLinePrimitive3</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <StartCap Ref="40" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive3>
+        <VerticalLinePrimitive4 Ref="41" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>4.4,1.4,0.0254,1.2</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="42" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>608f505080944dfdaf687705fbfee982</Guid>
+          <Name>VerticalLinePrimitive4</Name>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <StartCap Ref="43" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive4>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>8b9822b704184ce98727cba175265922</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/21/2019 9:46:39 PM</ReportChanged>
+  <ReportCreated>4/21/2019 9:27:01 PM</ReportCreated>
+  <ReportFile>C:\wamp64\www\reports\report.mrt</ReportFile>
+  <ReportGuid>b7b301be62404cfc97b96b0c89359bb3</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2019.2.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,67 @@
+/*****************************************************************/
+/* @package phpBB Style - RCX² - Copyright (C) 2019 Alma
+/* @license Private License
+/*****************************************************************/
+
+/* -------------------------------------------------------------- /*
+	$Extensions
+/* -------------------------------------------------------------- */
+
+/* BBCode - Responsive iframe video
+--------------------------------------------- */
+/* Delete this line to enable “BBcode video” custom CSS rules.
+.video-wrapper{width:640px;max-width:100%;margin:0 auto}.video-container{position:relative;overflow:hidden;height:0;padding-bottom:56.25%}.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+
+/* Extension - Board Rules by phpBB
+--------------------------------------------- */
+/* Delete this line to enable “Board rules v.2.1.1” custom CSS rules.
+.boardrules-categories{margin-top:36px}.mini-panel{border-width:1px;border-style:solid;border-radius:5px}.boardrules-container .content{font-size:1.05em;padding:5px 10px;border-width:1px;border-style:solid;border-radius:5px}.boardrules-menu{border:0}.highlight{border-radius:3px}
+
+
+/* Extension - Board Announcements by phpBB
+--------------------------------------------- */
+/* Delete this line to enable “Board Announcements v.1.1.0” custom CSS rules.
+#phpbb_announcement{border-radius:5px}
+
+
+/* Extension - Welcome Guest by tomberaid
+--------------------------------------------- */
+/* Delete this line to enable “Welcome Guest v.1.0.2” custom CSS rules.
+.welcome-box{border-width:3px;border-radius:5px}
+
+
+/* Extension - Board3 Portal by Marc Alexander
+--------------------------------------------- */
+/* Delete this line to enable “Board3 Portal v.2.1.0” custom CSS rules.
+#portal-body ul.topiclist+.topiclist,#portal-body .post,#portal-body .panel{box-sizing:border-box;margin-top:3px;border-width:1px;border-style:solid;border-radius:5px}#portal-body ul.topiclist+.topics,#portal-body ul.topiclist+div .bg1{border-width:0;background:0;box-shadow:none}#portal-body+.copyright{clear:both}#portal-body .row.portal-news-pagination{padding-bottom:3px}#portal-body select ~ input{margin-top:2px}#portal-left ul.topiclist li.header dt,#portal-right ul.topiclist li.header dt{padding:2px 0 0 !important;text-align:inherit;text-indent:5px}@media(max-width:700px){#portal-body ul.topiclist+.topiclist{border-radius:0}}@media(max-width:350px){#portal-left select,#portal-right select{max-width:150px}#portal-left .inputbox,#portal-right .inputbox{max-width:140px}}
+
+
+/* Extension - 24 Hour Activity Stats by Rich McGirr
+--------------------------------------------- */
+/* Delete this line to enable “24 Hour Activity Stats” custom CSS rules.
+.\32 4stats .icon:before{content:'\f1da'}
+
+
+/* Extension - mChat by dmzx/kasimi
+--------------------------------------------- */
+/* Delete this line to enable “mChat v.2.1.2” custom CSS rules.
+#mchat-body{margin-top:3px;padding-bottom:5px;border-width:1px;border-style:solid;border-radius:5px}.mchat-wrapper ul.forums{margin-top:0}.mchat-wrapper .panel{border-width:1px 0 0;background:0;box-shadow:none}.mchat-wrapper ul li.row{margin:0;border-bottom-style:dotted;border-radius:0;box-shadow:none}.mchat-wrapper ul li.row:first-child{border-top-width:0}.mchat-wrapper li.row.mchat-no-messages{border:0;background:0}.mchat-avatar img{margin:0 auto}.mchat-text img{max-width:200px}@media(max-width:700px){a.mchat-nav-link-title>span,a.mchat-nav-link-title>.mchat-nav-caret{display:none}}
+
+
+/* Extension - Profile Side Switcher by tatiana5
+--------------------------------------------- */
+/* Delete this line to enable “Profile Side Switcher v.1.0.1” custom CSS rules.
+.leftsided .post .postprofile{margin-right:10px;border-width:1px}.leftsided dl.postprofile dd,.leftsided dl.postprofile dt{margin-left:8px}.leftsided .postprofile dt .online-icon{text-align:left}@media(max-width:700px){.leftsided .post .postprofile{margin:0 0 5px;border-width:0 0 1px}.leftsided dl.postprofile dd,.leftsided dl.postprofile dt{margin-left:0}.leftsided .postprofile dt .online-icon{text-align:right}}
+
+
+/* Extension - Post Edit Log by towen
+--------------------------------------------- */
+/* Delete this line to enable “Post Edit Log v.1.2.0” custom CSS rules.
+#edit-content{margin-top:3px;padding:5px 10px 10px;border-width:1px;border-style:solid;border-radius:5px}#edit-compare th{padding:6px 5px}.edit-reason,.old-subject,.edit-time{text-align:left}
+
+
+/* Extension - Hotschi's Downloads by oxpus
+--------------------------------------------- */
+/* Delete this line to enable “Hotschi's Downloads v.7.3.3” custom CSS rules.
+.tablewrap .panel{border:0;background:0;box-shadow:none}

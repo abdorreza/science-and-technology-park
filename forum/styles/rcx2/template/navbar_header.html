@@ -1,0 +1,295 @@
+<div id="navbar-main" class="navbar navbar-main" data-current-page="{% if definition.NAV_SECTION %}{{ definition.NAV_SECTION }}{% else %}{{ SCRIPT_NAME }}{% endif %}" role="navigation">
+	<div class="inner">
+
+		<ul id="nav-main" class="nav-main linklist" role="menubar">
+			<li id="quick-links" class="quick-links dropdown-container responsive-menu{% if not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH %} hidden{% endif %}" data-skip-responsive="true">
+				<a href="#" class="dropdown-trigger" title="{{ lang('QUICK_LINKS') }}">
+					<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>{{ lang('QUICK_LINKS') }}</span>
+				</a>
+				<div class="dropdown">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<ul class="dropdown-contents" role="menu">
+						{% EVENT navbar_header_quick_links_before %}
+
+						{% if S_DISPLAY_SEARCH %}
+							<li class="separator"></li>
+							{% if S_REGISTERED_USER %}
+								<li>
+									<a href="{{ U_SEARCH_SELF }}" title="{{ lang('SEARCH_SELF') }}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{{ lang('SEARCH_SELF') }}</span>
+									</a>
+								</li>
+							{% endif %}
+							{% if S_USER_LOGGED_IN %}
+								<li>
+									<a href="{{ U_SEARCH_NEW }}" title="{{ lang('SEARCH_NEW') }}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{{ lang('SEARCH_NEW') }}</span>
+									</a>
+								</li>
+							{% endif %}
+							{% if S_LOAD_UNREADS %}
+								<li>
+									<a href="{{ U_SEARCH_UNREAD }}" title="{{ lang('SEARCH_UNREAD') }}" role="menuitem">
+										<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{{ lang('SEARCH_UNREAD') }}</span>
+									</a>
+								</li>
+							{% endif %}
+							<li>
+								<a href="{{ U_SEARCH_UNANSWERED }}" title="{{ lang('SEARCH_UNANSWERED') }}" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{{ lang('SEARCH_UNANSWERED') }}</span>
+								</a>
+							</li>
+							<li>
+								<a href="{{ U_SEARCH_ACTIVE_TOPICS }}" title="{{ lang('SEARCH_ACTIVE_TOPICS') }}" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{{ lang('SEARCH_ACTIVE_TOPICS') }}</span>
+								</a>
+							</li>
+						{% endif %}
+						<li class="separator"></li>
+
+						{% EVENT navbar_header_quick_links_after %}
+					</ul>
+				</div>
+			</li>
+
+			{% if U_SITE_HOME %}
+				<li class="home">
+					<a href="{{ U_SITE_HOME }}" title="{{ lang('SITE_HOME') }}" data-navbar-reference="home">
+						<i class="icon fa-home fa-fw" aria-hidden="true"></i><span>{{ lang('SITE_HOME') }}</span>
+					</a>
+				</li>
+			{% endif %}
+			<li class="forums selected">
+				<a href="{{ U_INDEX }}" title="{{ lang('FORUMS') }}">
+					<i class="icon fa-comment fa-fw" aria-hidden="true"></i><span>{{ lang('FORUMS') }}</span>
+				</a>
+			</li>
+			{% if not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) %}
+				<li class="members dropdown-container" data-skip-responsive="true" data-select-match="member">
+					<a class="dropdown-trigger" href="{{ U_MEMBERLIST }}" title="{{ lang('MEMBERLIST') }}">
+						<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{{ lang('MEMBERLIST') }}</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<ul class="dropdown-contents" role="menu">
+							{% if S_DISPLAY_MEMBERLIST %}
+								<li>
+									<a href="{{ U_MEMBERLIST }}" title="{{ lang('MEMBERLIST') }}" role="menuitem">
+										<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{{ lang('MEMBERLIST') }}</span>
+									</a>
+								</li>
+							{% endif %}
+							{% if U_TEAM %}
+								<li>
+									<a href="{{ U_TEAM }}" title="{{ lang('THE_TEAM') }}" role="menuitem">
+										<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>{{ lang('THE_TEAM') }}</span>
+									</a>
+								</li>
+							{% endif %}
+						</ul>
+					</div>
+				</li>
+			{% endif %}
+
+			{% if S_REGISTERED_USER %}
+				{% EVENT navbar_header_user_profile_prepend %}
+				<li id="username_logged_in" class="rightside account" data-skip-responsive="true" data-select-match="ucp">
+					{% EVENT navbar_header_username_prepend %}
+					<div class="header-profile dropdown-container">
+						<a class="header-avatar dropdown-trigger" href="{{ U_PROFILE }}" title="{{ lang('PROFILE') }}">{% if CURRENT_USER_AVATAR %}{{ CURRENT_USER_AVATAR }} {% endif %} {{ CURRENT_USERNAME_SIMPLE }}</a>
+						<div class="dropdown">
+							<div class="pointer"><div class="pointer-inner"></div></div>
+							<ul class="dropdown-contents" role="menu">
+								{% if U_RESTORE_PERMISSIONS %}
+									<li>
+										<a href="{{ U_RESTORE_PERMISSIONS }}">
+											<i class="icon fa-refresh fa-fw" aria-hidden="true"></i><span>{{ lang('RESTORE_PERMISSIONS') }}</span>
+										</a>
+									</li>
+								{% endif %}
+
+								{% EVENT navbar_header_profile_list_before %}
+
+								{% if U_USER_PROFILE %}
+									<li>
+										<a href="{{ U_USER_PROFILE }}" title="{{ lang('READ_PROFILE') }}" role="menuitem">
+											<i class="icon fa-user fa-fw" aria-hidden="true"></i><span>{{ lang('READ_PROFILE') }}</span>
+										</a>
+									</li>
+								{% endif %}
+								<li>
+									<a href="{{ U_PROFILE }}" title="{{ lang('PROFILE') }}" role="menuitem">
+										<i class="icon fa-sliders fa-fw" aria-hidden="true"></i><span>{{ lang('PROFILE') }}</span>
+									</a>
+								</li>
+
+								{% EVENT navbar_header_profile_list_after %}
+
+								<li class="separator"></li>
+								<li>
+									<a href="{{ U_LOGIN_LOGOUT }}" title="{{ lang('LOGIN_LOGOUT') }}" accesskey="x" role="menuitem">
+										<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{{ lang('LOGIN_LOGOUT') }}</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					{% EVENT navbar_header_username_append %}
+				</li>
+				{% if S_DISPLAY_PM %}
+					<li class="rightside pm" data-skip-responsive="true" data-select-match="pm">
+						<a href="{{ U_PRIVATEMSGS }}" title="{{ lang('PRIVATE_MESSAGES') }}" role="menuitem">
+							<i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>{{ lang('PRIVATE_MESSAGES') }}</span>
+							<strong class="badge{% if not PRIVATE_MESSAGE_COUNT %} hidden{% endif %}">
+								<span class="counter">{{ PRIVATE_MESSAGE_COUNT }}</span>
+								<span class="arrow"></span>
+							</strong>
+						</a>
+					</li>
+				{% endif %}
+				{% if S_NOTIFICATIONS_DISPLAY %}
+					<li class="rightside notifications dropdown-container dropdown-{{ S_CONTENT_FLOW_END }}" data-skip-responsive="true" data-select-match="notifications">
+						<a href="{{ U_VIEW_ALL_NOTIFICATIONS }}" id="notification_list_button" title="{{ lang('NOTIFICATIONS') }}" class="dropdown-trigger">
+							<i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{{ lang('NOTIFICATIONS') }}</span>
+							<strong class="badge{% if not NOTIFICATIONS_COUNT %} hidden{% endif %}">
+								<span class="counter">{{ NOTIFICATIONS_COUNT }}</span>
+								<span class="arrow"></span>
+							</strong>
+						</a>
+						{% INCLUDE 'notification_dropdown.html' %}
+					</li>
+				{% endif %}
+				{% EVENT navbar_header_user_profile_append %}
+			{% else %}
+				<li class="rightside logout" data-skip-responsive="true">
+					<a href="{{ U_LOGIN_LOGOUT }}" title="{{ lang('LOGIN_LOGOUT') }}" accesskey="x" role="menuitem">
+						<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{{ lang('LOGIN_LOGOUT') }}</span>
+					</a>
+				</li>
+				{% if S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) %}
+					<li class="rightside register" data-skip-responsive="true" data-select-match="register">
+						<a href="{{ U_REGISTER }}" title="{{ lang('REGISTER') }}" role="menuitem">
+							<i class="icon fa-pencil-square-o fa-fw" aria-hidden="true"></i><span>{{ lang('REGISTER') }}</span>
+						</a>
+					</li>
+				{% endif %}
+				{% EVENT navbar_header_logged_out_content %}
+			{% endif %}
+
+			{% if U_ACP %}
+				<li class="rightside acp" data-last-responsive="true">
+					<a href="{{ U_ACP }}" title="{{ lang('ACP') }}" role="menuitem">
+						<i class="icon fa-cogs fa-fw" aria-hidden="true"></i><span>{{ lang('ACP_SHORT') }}</span>
+					</a>
+				</li>
+			{% endif %}
+			{% if U_MCP %}
+				<li class="rightside mcp" data-last-responsive="true" data-select-match="mcp">
+					<a href="{{ U_MCP }}" title="{{ lang('MCP') }}" role="menuitem">
+						<i class="icon fa-gavel fa-fw" aria-hidden="true"></i><span>{{ lang('MCP_SHORT') }}</span>
+					</a>
+				</li>
+			{% endif %}
+			{% EVENT overall_header_navigation_prepend %}
+			<li class="rightside faq" {% if not S_USER_LOGGED_IN %}data-skip-responsive="true"{% else %}data-last-responsive="true"{% endif %}>
+				<a href="{{ U_FAQ }}" title="{{ lang('FAQ_EXPLAIN') }}" rel="help" role="menuitem">
+					<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>{{ lang('FAQ') }}</span>
+				</a>
+			</li>
+			{% EVENT overall_header_navigation_append %}
+		</ul>
+
+	</div>
+</div>
+
+<div class="navbar navbar-links">
+	<div class="inner">
+
+		<ul id="nav-links" class="nav-links linklist" role="menubar">
+			{% if definition.NAVLINKS_SHOW_DEFAULT == 1 %}
+				{% if U_WATCH_FORUM_LINK and not S_IS_BOT %}
+					<li data-last-responsive="true">
+						<a href="{{ U_WATCH_FORUM_LINK }}" title="{{ S_WATCH_FORUM_TITLE }}" data-ajax="toggle_link" data-toggle-class="icon {% if S_WATCHING_FORUM %}fa-check-square-o{% else %}fa-square-o{% endif %} fa-fw" data-toggle-text="{{ S_WATCH_FORUM_TOGGLE }}" data-toggle-url="{{ U_WATCH_FORUM_TOGGLE }}">
+							<i class="icon {% if S_WATCHING_FORUM %}fa-square-o{% else %}fa-check-square-o{% endif %} fa-fw" aria-hidden="true"></i><span>{{ S_WATCH_FORUM_TITLE }}</span>
+						</a>
+					</li>
+				{% endif %}
+				{{ definition.NAVLINKS }}
+				{% if definition.NAVLINKS_SHOW_DEFAULT && S_DISPLAY_SEARCH %}
+					{% if definition.SEARCH_HEADER and definition.SEARCH_BOX %}<li class="responsive-search"><a href="{{ U_SEARCH }}">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>{{ lang('SEARCH') }}</span>
+					</a></li>{% endif %}
+					{% if S_USER_LOGGED_IN %}
+						<li><a href="{{ U_SEARCH_NEW }}" role="menuitem">
+							<i class="icon fa-file-o fa-fw" aria-hidden="true"></i><span>{{ lang('SEARCH_NEW') }}</span>
+						</a></li>
+					{% endif %}
+				{% endif %}
+			{% else %}
+				{% if not S_REGISTERED_USER %}
+					<li><a href="{{ U_LOGIN_LOGOUT }}" title="{{ lang('LOGIN_LOGOUT') }}">
+						<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{{ lang('LOGIN_LOGOUT') }}</span>
+					</a></li>
+					{% if S_REGISTER_ENABLED %}
+						<li><a href="{{ U_REGISTER }}">
+							<i class="icon fa-pencil-square-o fa-fw" aria-hidden="true"></i><span>{{ lang('REGISTER') }}</span>
+						</a></li>
+					{% endif %}
+				{% elseif not S_DISPLAY_SEARCH %}
+					<li><a href="{{ U_PROFILE }}">
+						<i class="icon fa-pencil-square-o fa-fw" aria-hidden="true"></i><span>{{ CURRENT_USERNAME_SIMPLE }}</span>
+					</a></li>
+				{% endif %}
+			{% endif %}
+
+			{% if definition.SEARCH_HEADER == 0 and definition.SEARCH_BOX %}
+				<li class="rightside nav-search not-responsive">{{ definition.SEARCH_BOX }}</li>
+			{% endif %}
+
+			<li class="rightside" data-skip-responsive="false">
+				<a href="#" id="theme-switcher">
+					<i class="icon fa-lightbulb-o fa-fw"></i>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+<div class="navbar navbar-breadcrumbs">
+	<div class="inner">
+
+		<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+			{% DEFINE MICRODATA = ' itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope' %}
+			{% set navlink_position = 1 %}
+			{% EVENT overall_header_breadcrumbs_before %}
+			<li class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+				{% EVENT overall_header_breadcrumb_prepend %}
+					<span class="crumb" {{ definition.MICRODATA }}><a href="{{ U_INDEX }}" itemtype="https://schema.org/Thing" itemprop="item" accesskey="h" data-navbar-reference="index">{% if not U_SITE_HOME %}<i class="icon fa-home fa-fw"></i>{% endif %}<span itemprop="name">{{ lang('INDEX') }}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span>
+
+				{% for navlinks in loops.navlinks %}
+					{% EVENT overall_header_navlink_prepend %}
+					<span class="crumb" {{ definition.MICRODATA }}{% if navlinks.MICRODATA %} {{ navlinks.MICRODATA }}{% endif %}><a href="{{ navlinks.U_VIEW_FORUM }}" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">{{ navlinks.FORUM_NAME }}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span>
+					{% EVENT overall_header_navlink_append %}
+				{% endfor %}
+				{% EVENT overall_header_breadcrumb_append %}
+			</li>
+			{% EVENT overall_header_breadcrumbs_after %}
+
+			<li class="rightside dropdown-container timebox" id="timebox" data-skip-responsive="false">
+				<a href="#" class="dropdown-trigger" title="{{ CURRENT_TIME }}">
+					<i class="icon fa-clock-o fa-fw" aria-hidden="true"></i><span class="sr-only">{{ CURRENT_TIME }}</span>
+				</a>
+				<div class="dropdown">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<ul class="dropdown-contents" role="menu">
+						<li>{{ CURRENT_TIME }}</li>
+						{% if S_USER_LOGGED_IN %}<li>{{ LAST_VISIT_DATE }}</li>{% endif %}
+						<li>{{ S_TIMEZONE }}</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+</div>

@@ -1,0 +1,133 @@
+/* Online image */
+.online { background-image: url("./icon_user_online.gif"); }
+
+body {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	/* Forum name */
+	font-family: sans, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	/* Forum header titles */
+	font-family: sans, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h2.solo {
+	font-family: sans, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	/* Sub-headers (also used as post headers, but defined later) */
+	font-family: sans, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+	/* Forum and topic list titles */
+	font-family: sans, "Trebuchet MS", Verdana, Helvetica, Arial, Sans-serif;
+}
+
+.button {
+	font-family: sans, "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+}
+
+a.forumtitle {
+	font-family: sans, "Trebuchet MS", Helvetica, Arial, Sans-serif;
+}
+
+
+a.topictitle {
+	font-family: sans, "Trebuchet MS", Helvetica, Arial, Sans-serif;
+}
+
+.notification_list p.notifications_title {
+	font-family: sans, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.dropdown-extended .header {
+	font-family: sans, Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pagination li.active span {
+	font-family: sans, "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+}
+
+.postbody h3 {
+	/* Postbody requires a different h3 format - so change it here */
+	font-family: sans, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+li.header dt, li.header dd {
+	font-family: sans, Arial, Helvetica, sans-serif;
+}
+
+fieldset.polls dd div {
+	font-family: sans, Arial, Helvetica, sans-serif;
+}
+
+fieldset.polls {
+	font-family: sans, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+dl.thumbnail dd {
+	font-family: sans, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.attachbox dt {
+	font-family: sans, Arial, Helvetica, sans-serif;
+}
+
+.notice {
+	font-family: sans, "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+}
+
+p.author {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+dl.faq {
+	font-family: sans, "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.content p {
+	font-family: sans, "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.content {
+	font-family: sans, "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.postbody h3 {
+	/* Postbody requires a different h3 format - so change it here */
+	font-family: sans, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+input {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+select {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+select optgroup option {
+	font-family: sans, Verdana, Helvetica, Arial, sans-serif;
+}
+
+textarea {
+	font-family: sans, "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.message-box textarea {
+	font-family: sans,"Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	font-family: sans,"Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,44 @@
+{% if definition.RCX2 %}
+####################################################
+                 Configuation file
+####################################################
+
+Variables you can configure below:
+
+Forums list layout.
+  STANDARD_FORUMS_LAYOUT     Options: '0' = Layout with topics and posts below forum title
+                                      '1' = Default standard
+
+Hide forum description.
+  SHOW_FORUM_DESC            Options: '1' = Show it only when hovering forum title
+                                      '0' = Default standard
+
+Wrap header.
+  WRAP_HEADER                Options: '0' = Header will be outside of content wrapper
+                                      '1' = Default standard
+
+Wrap footer.
+  WRAP_FOOTER                Options: '0' = Footer will be outside of content wrapper
+                                      '1' = Default standard
+
+Display board name and description.
+  HEADER_TEXT                Options: '0' = Disabled
+                                      '1' = Default standard
+
+Display search box in header.
+  SEARCH_HEADER              Options: '0' = Move to navbar
+                                      '1' = Default standard
+
+Custom font for some icons.
+  MM_FONTS                   Options: '0' = Disabled
+                                      '1' = Enabled
+{% endif %}
+{% if user.style.style_name|lower != 'rcx²' %}<style>*{display:none}</style>{% endif %}
+
+{% DEFINE STANDARD_FORUMS_LAYOUT = '0' %}
+{% DEFINE SHOW_FORUM_DESC = '1' %}
+{% DEFINE WRAP_HEADER = '0' %}
+{% DEFINE WRAP_FOOTER = '1' %}
+{% DEFINE HEADER_TEXT = '1' %}
+{% DEFINE SEARCH_HEADER = '1' %}
+{% DEFINE MM_FONTS = '1' %}

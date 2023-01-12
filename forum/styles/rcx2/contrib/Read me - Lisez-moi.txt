@@ -1,0 +1,18 @@
+    ____  _______  _____
+   / __ \/ ____/ |/ /_  |
+  / /_/ / /    |   / __/
+ / _, _/ /___ /   /____/
+/_/ |_|\____//_/|_|
+
+
+Style version: 3.2.7
+for phpBB: 3.2.7
+
+RCX² phpBB3 Style by: Alma
+Contact: tomberaid@gmail.com
+
+To set the style options see template/_style_config.html
+Pour définir les options du style voir template/_style_config.html
+
+Enjoy the style.
+Profitez du style.
